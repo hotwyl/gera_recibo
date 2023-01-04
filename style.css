@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.dados {
+    margin-top: 50px;
+    display: block;
+}
+
+.print {
+    display: none;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 600px;
+}
+
+.print h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.print h2 {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.assinatura {
+    margin-top: 40px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+@media print {
+    .print {
+        display: block;
+    }
+    .dados {
+        display: none;
+    }
+}
